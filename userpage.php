@@ -1,6 +1,6 @@
 <?php
 session_start(); // spuštění sezení 
-include_once 'pripojeni.php'; // login to pma
+include_once 'pripojeni.php'; // login to database 
 if (isset($_GET['username']))
 $prezdivka = $_GET['username'];
 $sql = "SELECT id, username, img, content FROM users WHERE username='$prezdivka' ORDER BY created_at"; // my users, I take their username, picture, profile information and id on username ($_GET['username'])
